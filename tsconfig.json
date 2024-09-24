@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "strict": true,
+        "target": "ES2020",
+        "module": "NodeNext",
+        "lib": ["ES2021"],
+        "skipLibCheck": true,
+        "moduleResolution": "nodenext",
+        "strictNullChecks": false,
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": "./src",
+        "declaration": true,
+        "declarationDir": "./dist/types",
+        "declarationMap": true,
+        "paths": {
+            "@loggers/*": ["loggers/*"],
+            "@errors/*": ["errors/*"],
+            "@helpers/*": ["helpers/*"],
+            "@types/*": ["types/*"],
+            "@database/*": ["database/*"],
+            "@middlewares/*": ["middlewares/*"],
+            "@routes/*": ["infrastructure/routes/*"],
+            "@controllers/*": ["infrastructure/controllers/*"],
+            "@services/*": ["infrastructure/services/*"],
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
+}
